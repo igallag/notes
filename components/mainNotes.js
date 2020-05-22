@@ -10,7 +10,7 @@ const MainNotes = (props) => {
   return (
     <View>
       <Text>Title</Text>
-      <TextInput/>
+      <TextInput style={styles.textInput}/>
       <Text>Note</Text>
       <TextInput style={styles.textInput} onChangeText={(text) => onChangeText(text)} value={value} multiline={true} />
       <Button title='Go to home' onPress={() => navigation.navigate(Home)}/>
