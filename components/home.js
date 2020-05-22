@@ -2,7 +2,7 @@ import React from 'react';
 import { Animated, Button, StyleSheet, Text, View, Alert } from 'react-native';
 
 import {useNavigation} from '@react-navigation/native'
-
+import MainNotes from './mainNotes'
 
 const instructions = Platform.select({
     ios: `Press Cmd+R to reload,\nCmd+D or shake for dev menu`,

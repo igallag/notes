@@ -13,7 +13,7 @@ const Stack = createStackNavigator()
 const MainStackNavigator = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator initialRouteName='Home'>
                 <Stack.Screen name='Home' component={Home} options={{ title: 'Home Screen' }}/>
                 <Stack.Screen name='MainNotes' component={MainNotes}/>
             </Stack.Navigator>
