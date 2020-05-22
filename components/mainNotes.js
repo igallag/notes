@@ -9,11 +9,23 @@ const MainNotes = (props) => {
   
   return (
     <View>
-      <Text>Hello you didnt break it</Text>
-      <TextInput onChangeText={(text) => onChangeText(text)} value={value} />
+      <Text>Title</Text>
+      <TextInput/>
+      <Text>Note</Text>
+      <TextInput style={styles.textInput} onChangeText={(text) => onChangeText(text)} value={value} multiline={true} />
       <Button title='Go to home' onPress={() => navigation.navigate(Home)}/>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  textInput: {
+    margin: 5,
+    padding: 2,
+    borderColor: 'black',
+    borderWidth: 1,
+    borderRadius: 10
+  }
+})
 
 export default MainNotes;
