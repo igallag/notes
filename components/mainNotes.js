@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Button, StyleSheet, Text, View, TextInput } from 'react-native';
-import { useState } from 'react';
 
-const Note = () => {
-  const [value, onChangeText] = useState(`Get to Notin'`);
+const MainNotes = () => {
+  // const [value, onChangeText] = useState(`Get to Notin'`);
   return (
     <View>
-      <TextInput onChangeText={(text) => onChangeText(text)} value={value} />
+      {/* <TextInput onChangeText={(text) => onChangeText(text)} value={value} /> */}
+      <Text>Hello you didnt break it</Text>
     </View>
   );
 };
 
-export default Note;
+export default MainNotes;
