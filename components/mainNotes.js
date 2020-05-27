@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import { Button, StyleSheet, Text, View, TextInput } from 'react-native';
-
-import Home from './home'
+// components
+// import Home from './home'
+// utils
+import saveNote from '../utils/saveNote'
 
 const MainNotes = (props) => {
   const [value, onChangeText] = useState(`Get to Notin'`);
   const {navigation} = props
-  
+  // console.log(value)
   return (
     <View>
       <Text>Title</Text>
       <TextInput style={styles.textInput}/>
       <Text>Note</Text>
       <TextInput style={styles.textInput} onChangeText={(text) => onChangeText(text)} value={value} multiline={true} />
-      <Button title='Go to home' onPress={() => navigation.navigate(Home)}/>
+      <Button title='Save Note' onPress={() => saveNote(value)}/>
     </View>
   );
 };
@@ -27,7 +29,7 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   button: {
-    
+
   }
 })
 
